@@ -24,7 +24,7 @@ The project leverages modern tools and best practices to ensure efficient and re
         Old images and containers are cleaned up to optimize resources.
 
 
-Workflow Steps
+# Workflow Steps
 
     Build and Test:
         The workflow is triggered on push or pull request events targeting the main branch.
