@@ -5,7 +5,6 @@ The project leverages modern tools and best practices to ensure efficient and re
 
 
 <h2>Features</h2>
-
     Continuous Integration:
         Automatically builds and tests the application on every push or pull request to the main branch.
         Uses Docker to containerize the application for consistent runtime environments.
