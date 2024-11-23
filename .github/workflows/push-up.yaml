@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install
-      - run: 1  npm test
+      - run: npm test
 
   build-and-deploy:
     needs: test
@@ -64,23 +64,3 @@ jobs:
         if: always()
         run: |
           rm -rf ~/.ssh/id_rsa
-
-# **Key Improvements:**
-
-# 1. **SSH Key Management:**
-#    - Uses a more secure approach by directly injecting the SSH key into the `ssh` command using environment variables.
-#    - Avoids creating a temporary key file on the runner.
-
-# 2. **Concise Scripting:**
-#    - Uses a more concise SSH command to execute the deployment steps directly on the EC2 instance.
-
-# 3. **Enhanced Security:**
-#    - Avoids exposing the SSH key in plain text in the workflow file.
-#    - Ensures the SSH key is only used during the deployment process and is deleted afterward.
-
-# 4. **Improved Readability:**
-#    - Uses a more readable format for the SSH command, with clear indentation and line breaks.
-
-# Remember to replace `secrets.DOCKER_USERNAME`, `secrets.DOCKER_PASSWORD`, `secrets.DEPLOY_PORT`, `secrets.AWS_SSH_KEY`, and `secrets.AWS_HOST` with your actual secret values.
-
-# By implementing these improvements, you can enhance the security, efficiency, and maintainability of your CI/CD pipeline.
