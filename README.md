@@ -1,4 +1,4 @@
-# Nodejs App-Buildin
+# Nodejs App-Building
 This repository contains the source code and GitHub Actions workflow configuration for a Node.js application. 
 The CI/CD pipeline automates the process of building, testing, containerizing, and deploying the application to an AWS EC2 instance. 
 The project leverages modern tools and best practices to ensure efficient and reliable deployments.
